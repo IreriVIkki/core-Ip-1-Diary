@@ -1,0 +1,17 @@
+<div>
+  <h2>by {{quote.author}}</h2>
+  <div>
+    <p>added by {{quote.user}}</p>
+  </div>
+  <div>
+    <p>
+      <button class="btn btn-sm btn-dark" on-click="addUpVotes()">up-vote</button> {{quote.upvotes}} </p>
+    <p>
+      <button class="btn btn-sm btn-dark" on-click="addDownVotes()">down-votes</button>
+      down-votes {{quote.downvotes}} </p>
+  </div>
+  <div>
+    <p>quote {{quote.id}} </p>
+    <p> {{quote.timepassed}} seconds ago </p>
+  </div>
+</div>
