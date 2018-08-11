@@ -1,1 +1,29 @@
+.form-section {
+  border: solid 1px #000000;
+  border-radius: 10px;
+  background-color: #2f2f2f
+}
 
+button {
+  color: #FFCC00;
+}
+
+button#newQuote {
+  background: linear-gradient(to bottom, #474747, #2a2a2a, #1b1b1b);
+  box-shadow: inset 0 1px 0 #636363, 0 1px 4px -1px #000;
+}
+
+button#submit {
+  background: linear-gradient(to bottom, #474747, #2a2a2a, #1b1b1b);
+  box-shadow: inset 0 1px 0 #636363, 0 1px 4px -1px #000;
+}
+
+button:hover {
+  background: #D4332E;
+}
+
+label {
+  border: none;
+  color: #b8b8b8;
+  font-size: 18px;
+}
