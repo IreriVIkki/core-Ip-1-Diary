@@ -10,12 +10,10 @@ export class QuotesComponent implements OnInit {
   constructor() {}
 
   Quotes = new Quotes(0, "", 0, 0, "", "", new Date());
+  quotes: Array<Quotes>;
 
-  public quotes: Array<Quotes>;
-
-  getNewQuote(x: Array<Quotes>) {
-    x;
-    console.log(x);
+  getNewQuote(x: Array<Quotes>): void {
+    this.quotes = x;
   }
 
   ngOnInit() {}

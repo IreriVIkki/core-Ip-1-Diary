@@ -4,9 +4,9 @@
     <div>
       <h1 class="mt-5">Published Quotes</h1>
       <ul>
-        <li *ngFor='let quote of x'>
+        <li *ngFor='let quote of quotes'>
           <p> {{quote.quote}} </p>
-          <app-quotes-details [quote]='quote'></app-quotes-details>
+          <!-- <app-quotes-details [quote]='quote'></app-quotes-details> -->
         </li>
       </ul>
     </div>
