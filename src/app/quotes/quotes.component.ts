@@ -9,15 +9,8 @@ import { Quotes } from "../quotes";
 export class QuotesComponent implements OnInit {
   constructor() {}
 
-  public quotes: Array<Quotes> = [];
-  public newQuote: Quotes = new Quotes(0, "", 0, 0, "", "", new Date());
-
-  addId() {
-    return this.quotes.length + 1;
-  }
-
-  getNewQuote(quote: Quotes) {
-    this.quotes.push(quote);
+  getNewQuote(quotes: Array<Quotes>) {
+    quotes;
   }
 
   ngOnInit() {}

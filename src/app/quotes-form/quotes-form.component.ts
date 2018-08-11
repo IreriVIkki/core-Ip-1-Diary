@@ -10,16 +10,17 @@ export class QuotesFormComponent implements OnInit {
   constructor() {}
 
   newQuote = new Quotes(0, "", 0, 0, "", "", new Date());
-
-  submitQuote(): void {
-    this.newQuote;
-  }
+  public quotes: Array<Quotes> = new Array<Quotes>();
 
   @Output()
-  addQuote: EventEmitter<Quotes> = new EventEmitter<Quotes>();
+  quotesArray: EventEmitter<Array<Quotes>> = new EventEmitter<Array<Quotes>>();
+
+  submitQuote() {}
 
   publishQuote() {
-    this.addQuote.emit(this.newQuote);
+    this.newQuote;
+    this.quotes.push(this.newQuote);
+    this.quotesArray.emit(this.quotes);
   }
 
   clearInputs() {
@@ -28,3 +29,4 @@ export class QuotesFormComponent implements OnInit {
 
   ngOnInit() {}
 }
+

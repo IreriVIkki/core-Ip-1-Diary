@@ -2,7 +2,7 @@
   <div>
     <button on-click="clearInputs()">New Quote</button>
   </div>
-  <form action="submit" (ngSubmit)="submitQuote()">
+  <form (ngSubmit)="submitQuote()">
     <div class="form-group">
       <label class="form-control-lg d-flex w-auto" for="quote">Add a new quote</label>
       <textarea class="form-control" [(ngModel)]="newQuote.quote" name="quote" id="quoteInput" cols="30" rows="4"></textarea>
@@ -17,4 +17,5 @@
     </div>
     <button (click)="publishQuote()">Submit Quote</button>
   </form>
+  <p *ngFor="let quote of quotes"> {{quote.quote}} </p>
 </div>
