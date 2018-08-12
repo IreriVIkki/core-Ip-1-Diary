@@ -1,23 +1,4 @@
 <div>
-<<<<<<< HEAD
-  <h2>by {{quote.author}}</h2>
-  <div>
-    <p>added by {{quote.user}}</p>
-  </div>
-  <div class="votes d-flex">
-    <p class="d-inline-block mr-4">
-      <button class="btn btn-sm like px-3 mr-2" on-click="addUpVotes()">👍</button>
-      {{quote.upvotes}}
-    </p>
-    <p class="d-inline-block">
-      <button class="btn btn-sm dislike px-3 mr-2" on-click="addDownVotes()">👎</button>
-      {{quote.downvotes}}
-    </p>
-  </div>
-  <div>
-    <p>quote {{quote.id}} </p>
-    <p> {{quote.timepassed | timepassed}}ago </p>
-=======
   <h3 class="quoteAuthor">'{{quote.author}}'</h3>
   <div class="ml-4">
     <div class="extraDetails">
@@ -36,6 +17,5 @@
       <p class="form-control-sm pl-0"> {{quote.timepassed | timepassed}}ago </p>
     </div>
     <button class="btn btn-sm btn-warning text-black-50" (click)="toDelete()">Delete Quote</button>
->>>>>>> c0b9b66
   </div>
 </div>
