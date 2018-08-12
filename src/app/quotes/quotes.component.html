@@ -1,9 +1,10 @@
 <header>
   <div class="jumbotron-fluid py-5 mb-3 ">
-    <h1 class="display-2 title">BestLifeQuotes
+    <h1 class="display-2 title pt-3">
+      <span>BestLifeQuotes</span>
       <span class="small">.com</span>
     </h1>
-    <p class="sub-title">Get Inspired Everyday</p>
+    <p class="sub-title text-uppercase pb-3">Get your daily inspiration</p>
   </div>
 </header>
 
@@ -24,11 +25,11 @@
           <h1 class="mt-1">Quote Of The day</h1>
           <p class="mx-3 quoteofDay">"{{quoteOfDay}}"</p>
           <div>
-            <p class="authorofDay d-flex justify-content-end mx-3 pr-5"> ~ {{quoteAuthor}} </p>
+            <p class="authorofDay d-flex justify-content-end mx-3 pr-5"> ― {{quoteAuthor}} </p>
           </div>
         </div>
         <ul>
-          <li class="ml-5" *ngFor='let quote of quotes; let i = index'>
+          <li class="ml-5 allQuotes p-3 my-2" *ngFor='let quote of quotes; let i = index'>
             <p class="quote"> {{quote.quote}} </p>
             <div class="d-flex justify-content-end">
               <app-quotes-details (delete)="deleteQuote($event, i)" [quote]='quote'></app-quotes-details>

@@ -18,8 +18,16 @@
   margin-left: 10%;
 }
 
+.small {
+  color: #FFCC00;
+  font-style: italic;
+}
+
 .sub-title {
   margin-left: 10%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 .sidebar {
@@ -53,4 +61,9 @@ li {
   font-weight: 1000;
   color: rgb(16, 162, 8);
   font-style: italic;
+}
+
+.allQuotes {
+  border: rgb(104, 104, 104) solid 1px;
+  border-radius: 10px;
 }
