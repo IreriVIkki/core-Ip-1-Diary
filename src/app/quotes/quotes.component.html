@@ -1,23 +1,31 @@
 <header>
-  <div class="jumbotron-fluid">
-    <h1 class="display-2">BestLifeQuotes
+  <div class="jumbotron-fluid py-5  ">
+    <h1 class="display-2 title">BestLifeQuotes
       <span class="small">.com</span>
     </h1>
-    <p></p>
+    <p class="sub-title">Get Inspired Everyday</p>
   </div>
 </header>
 
-<div class="container">
-  <div class="jumbotron p-3 my-3">
-    <app-quotes-form (quotesArray)="getNewQuote($event)"></app-quotes-form>
-    <div>
-      <h1 class="mt-5">Published Quotes</h1>
-      <ul>
-        <li *ngFor='let quote of quotes'>
-          <p> {{quote.quote}} </p>
-          <!-- <app-quotes-details [quote]='quote'></app-quotes-details> -->
-        </li>
-      </ul>
+<div class="main">
+  <div class="shade"></div>
+  <div class="container-fluid d-flex">
+    <div class="sidebar w-25 p-3 my-3">
+      <img class="img-fluid img-thumbnail" src="../../assets/quote7.jpg" alt="quote7">
+      <img class="img-fluid img-thumbnail" src="../../assets/quote6.jpg" alt="quote7">
+      <img class="img-fluid img-thumbnail" src="../../assets/quote4.jpg" alt="quote7">
+    </div>
+    <div class="jumbotron p-3 my-3  main-area w-75">
+      <app-quotes-form (quotesArray)="getNewQuote($event)"></app-quotes-form>
+      <div>
+        <h1 class="mt-5">Published Quotes</h1>
+        <ul>
+          <li *ngFor='let quote of quotes'>
+            <p> {{quote.quote}} </p>
+            <!-- <app-quotes-details [quote]='quote'></app-quotes-details> -->
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

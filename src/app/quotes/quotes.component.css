@@ -1,4 +1,29 @@
 .jumbotron {
+  height: auto;
+  background-color: rgba(255, 213, 0, 0.647);
+}
+
+.main {
+  background-image: url('../../assets/mainbg.jpg');
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.title {
+  margin-left: 10%;
+}
+
+.sub-title {
+  margin-left: 10%;
+}
+
+.sidebar {
   height: 100vh;
   background-color: rgba(33, 33, 33, 0.304);
+  overflow: hidden;
+}
+
+.sidebar>img {
+  margin: 2px;
 }
