@@ -15,10 +15,10 @@ export class TimepassedPipe implements PipeTransform {
 
     var Seconds = dateDifference * 0.001; //converts to seconds
 
-    var days = parseInt(Seconds / 86400);
-    var hours = parseInt((Seconds % 86400) / 3600);
-    var minutes = parseInt(((Seconds % 86400) % 3600) / 60);
-    var seconds = parseInt(Seconds);
+    var days = parseInt(Seconds / 86400 + "");
+    var hours = parseInt((Seconds % 86400) / 3600 + "");
+    var minutes = parseInt(((Seconds % 86400) % 3600) / 60 + "");
+    var seconds = parseInt(Seconds + "");
 
     if (Seconds >= 86400) {
       return days + " days";

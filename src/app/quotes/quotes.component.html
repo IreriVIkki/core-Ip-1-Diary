@@ -19,16 +19,15 @@
     </div>
     <div class="jumbotron p-3 my-3  main-area w-75">
       <div>
-        <div>
-          <h1 class="mt-1">Quote Of The day</h1>
-        </div>
-        <ul>
-          <li *ngFor='let quote of quotes'>
-            <p> {{quote.quote}} </p>
-            <app-quotes-details [quote]='quote'></app-quotes-details>
-          </li>
-        </ul>
+        <h1 class="mt-1">Quote Of The day</h1>
+        <button class="btn btn-dark" (click)="updateQuotes()">Update</button>
       </div>
+      <ul>
+        <li *ngFor='let quote of quotes'>
+          <p> {{quote.quote}} </p>
+          <app-quotes-details [quote]='quote'></app-quotes-details>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
