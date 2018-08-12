@@ -26,7 +26,9 @@
         <ul>
           <li *ngFor='let quote of quotes'>
             <p class="quote"> {{quote.quote}} </p>
-            <app-quotes-details class="quoteDetails" [quote]='quote'></app-quotes-details>
+            <div class="d-flex justify-content-end">
+              <app-quotes-details [quote]='quote'></app-quotes-details>
+            </div>
           </li>
         </ul>
       </div>

@@ -29,8 +29,8 @@ export class QuotesFormComponent implements OnInit {
       this.quote,
       0,
       0,
-      this.user,
       this.author,
+      this.user,
       new Date()
     );
     this.quotes.push(Quote);
