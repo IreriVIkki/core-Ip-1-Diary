@@ -12,6 +12,7 @@ export class QuotesComponent implements OnInit {
   quotesArray: Array<Quotes>;
   quotes: Array<Quotes>;
   quoteOfDay: any;
+  quoteAuthor;
 
   getNewQuote(x: Array<Quotes>): void {
     console.log(x);
@@ -29,7 +30,8 @@ export class QuotesComponent implements OnInit {
       }
     }
     this.quoteOfDay = this.quotesArray[likes].quote;
-    console.log(this.quoteOfDay);
+    this.quoteAuthor = this.quotesArray[likes].author;
+    console.log(this.quoteAuthor);
     this.quotes = this.quotesArray;
   }
 

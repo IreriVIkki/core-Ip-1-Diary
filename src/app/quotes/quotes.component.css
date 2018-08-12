@@ -35,3 +35,18 @@ li {
 .quote {
   font-size: 22px;
 }
+
+.quoteofDay {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: #FFCC00;
+}
+
+.authorofDay {
+  font-size: 22px;
+  font-weight: 1000;
+  color: rgb(16, 162, 8);
+  font-style: italic;
+}
