@@ -2,7 +2,7 @@
   <div>
     <button id="newQuote" class="btn btn-sm" (click)="clearInputs()">Add New Quote</button>
   </div>
-  <form class="hide my-2 p-2" (submit)="publishQuote()">
+  <form class="hide my-2 p-2">
     <div class="form-group">
       <label class="form-control-sm bg-transparent w-auto d-inline-flex" for="quote">Add a new quote</label>
       <textarea class="form-control bg-light-white" [(ngModel)]="quote" name="quote" id="quote" cols="30" rows="3"></textarea>
@@ -15,6 +15,7 @@
       <label class="form-control d-inline-flex w-auto bg-transparent" for="user">User</label>
       <input class="form-control bg-light-white" [(ngModel)]="user" id="user" name="user" type="text">
     </div>
-    <button id="submit" type="submit" class="btn d-block btn-sm my-2">Submit</button>
+    <!-- <button class="btn d-block btn-sm my-2">save</button> -->
+    <button (click)="publishQuote()" id="submit" type="submit" class="btn d-block btn-sm my-2">Submit</button>
   </form>
 </div>

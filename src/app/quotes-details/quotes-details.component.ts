@@ -26,7 +26,6 @@ export class QuotesDetailsComponent implements OnInit {
 
   toDelete() {
     this.isdelete = !this.isdelete;
-    console.log(this.isdelete);
     this.delete.emit(this.isdelete);
   }
 

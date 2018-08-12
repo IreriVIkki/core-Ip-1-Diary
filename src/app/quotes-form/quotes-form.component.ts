@@ -16,10 +16,9 @@ export class QuotesFormComponent implements OnInit {
   author;
 
   ngOnInit() {
-    this.newQuote = new Quotes(0, "", 0, 0, "", "", new Date());
     this.quotes = [
       new Quotes(
-        0,
+        1,
         "It took thirty-eight years before 50 million people gained access to radios. It took television thirteen years to earn an audience that size. It took Instagram a year and a half.",
         0,
         0,
@@ -28,7 +27,7 @@ export class QuotesFormComponent implements OnInit {
         new Date()
       ),
       new Quotes(
-        0,
+        2,
         "life shrinks and expands on the proportion of your willingness to take risks and try new things.",
         0,
         0,
@@ -54,6 +53,7 @@ export class QuotesFormComponent implements OnInit {
     );
     this.quotes.push(Quote);
     this.quotesArray.emit(this.quotes);
+    console.log(this.quotes);
   }
 
   clearInputs() {

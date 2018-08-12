@@ -6,11 +6,6 @@ import { Pipe, PipeTransform } from "@angular/core";
 export class TimepassedPipe implements PipeTransform {
   transform(value: any): any {
     let today: any = new Date(); //get current date and time
-    let todayWithNoTime: any = new Date(
-      today.getFullYear(),
-      today.getMonth(),
-      today.getDate()
-    );
     var dateDifference = Math.abs(value - today); // returns value in milliseconds
 
     var Seconds = dateDifference * 0.001; //converts to seconds
