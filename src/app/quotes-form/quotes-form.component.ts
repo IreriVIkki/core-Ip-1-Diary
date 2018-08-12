@@ -38,6 +38,14 @@ export class QuotesFormComponent implements OnInit {
   }
 
   clearInputs() {
-    this.newQuote = new Quotes(0, "", 0, 0, "", "", new Date());
+    new Quotes(
+      0,
+      (this.quote = ""),
+      0,
+      0,
+      (this.author = ""),
+      (this.user = ""),
+      new Date()
+    );
   }
 }

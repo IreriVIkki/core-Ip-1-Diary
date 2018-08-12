@@ -24,10 +24,10 @@
           <h1 class="mt-1">Quote Of The day</h1>
         </div>
         <ul>
-          <li *ngFor='let quote of quotes'>
+          <li *ngFor='let quote of quotes; let i = index'>
             <p class="quote"> {{quote.quote}} </p>
             <div class="d-flex justify-content-end">
-              <app-quotes-details [quote]='quote'></app-quotes-details>
+              <app-quotes-details (delete)="deleteQuote($event, i)" [quote]='quote'></app-quotes-details>
             </div>
           </li>
         </ul>

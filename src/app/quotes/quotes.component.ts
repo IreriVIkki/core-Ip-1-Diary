@@ -21,5 +21,15 @@ export class QuotesComponent implements OnInit {
     this.quotes = this.quotesArray;
   }
 
+  deleteQuote(x: boolean, i: number) {
+    console.log(x);
+    if (x == true) {
+      let toDelete = confirm(
+        `Are you sure you want to delete ${this.quotes[i].quote}`
+      );
+      this.quotes.splice(i, 1);
+    }
+  }
+
   ngOnInit() {}
 }
