@@ -9,11 +9,16 @@ import { Quotes } from "../quotes";
 export class QuotesComponent implements OnInit {
   constructor() {}
 
+  quotesArray: Array<Quotes>;
   quotes: Array<Quotes>;
 
   getNewQuote(x: Array<Quotes>): void {
     console.log(x);
-    this.quotes = x;
+    this.quotesArray = x;
+  }
+
+  updateQuotes() {
+    this.quotes = this.quotesArray;
   }
 
   ngOnInit() {}

@@ -27,3 +27,11 @@
 .sidebar>img {
   margin: 2px;
 }
+
+li {
+  list-style: none
+}
+
+.quote {
+  font-size: 22px;
+}

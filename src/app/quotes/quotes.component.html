@@ -18,14 +18,15 @@
       <img class="img-fluid img-thumbnail" src="../../assets/quote4.jpg" alt="quote7">
     </div>
     <div class="jumbotron p-3 my-3  main-area w-75">
+      <button class="btn btn-sm" (click)="updateQuotes()">Refresh</button>
       <div>
         <div>
           <h1 class="mt-1">Quote Of The day</h1>
         </div>
         <ul>
           <li *ngFor='let quote of quotes'>
-            <p> {{quote.quote}} </p>
-            <app-quotes-details [quote]='quote'></app-quotes-details>
+            <p class="quote"> {{quote.quote}} </p>
+            <app-quotes-details class="quoteDetails" [quote]='quote'></app-quotes-details>
           </li>
         </ul>
       </div>
