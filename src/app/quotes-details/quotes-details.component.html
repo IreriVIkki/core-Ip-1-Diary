@@ -1,4 +1,5 @@
 <div>
+<<<<<<< HEAD
   <h2>by {{quote.author}}</h2>
   <div>
     <p>added by {{quote.user}}</p>
@@ -16,5 +17,25 @@
   <div>
     <p>quote {{quote.id}} </p>
     <p> {{quote.timepassed | timepassed}}ago </p>
+=======
+  <h3 class="quoteAuthor">'{{quote.author}}'</h3>
+  <div class="ml-4">
+    <div class="extraDetails">
+      <p class="quoteUser py-1">added by {{quote.user}}</p>
+    </div>
+    <div class="d-flex py-1">
+      <p>
+        <button class="btn btn-sm btn-dark px-3 mr-1 py-0" on-click="addUpVotes()">👍</button> {{quote.upvotes}}
+      </p>
+      <p>
+        <button class="btn btn-sm btn-dark px-3 py-0 mr-2 ml-3" on-click="addDownVotes()">👎</button>{{quote.downvotes}}
+      </p>
+    </div>
+    <div class="d-flex flex-row">
+      <p class="form-control-sm pl-0 text-warning">quote-{{quote.id}} </p>
+      <p class="form-control-sm pl-0"> {{quote.timepassed | timepassed}}ago </p>
+    </div>
+    <button class="btn btn-sm btn-warning text-black-50" (click)="toDelete()">Delete Quote</button>
+>>>>>>> c0b9b66
   </div>
 </div>

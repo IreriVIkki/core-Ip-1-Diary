@@ -18,9 +18,28 @@
       <img class="img-fluid img-thumbnail" src="../../assets/quote4.jpg" alt="quote7">
     </div>
     <div class="jumbotron p-3 my-3  main-area w-75">
+      <button class="btn btn-sm mb-2" (click)="updateQuotes()">Refresh</button>
       <div>
+<<<<<<< HEAD
         <h1 class="mt-1">Quote Of The day</h1>
         <button class="btn btn-dark" (click)="updateQuotes()">Update</button>
+=======
+        <div class="my-3 p-2" appHighlight>
+          <h1 class="mt-1">Quote Of The day</h1>
+          <p class="mx-3 quoteofDay">"{{quoteOfDay}}"</p>
+          <div>
+            <p class="authorofDay d-flex justify-content-end mx-3 pr-5"> ~ {{quoteAuthor}} </p>
+          </div>
+        </div>
+        <ul>
+          <li class="ml-5" *ngFor='let quote of quotes; let i = index'>
+            <p class="quote"> {{quote.quote}} </p>
+            <div class="d-flex justify-content-end">
+              <app-quotes-details (delete)="deleteQuote($event, i)" [quote]='quote'></app-quotes-details>
+            </div>
+          </li>
+        </ul>
+>>>>>>> c0b9b66
       </div>
       <ul>
         <li *ngFor='let quote of quotes'>

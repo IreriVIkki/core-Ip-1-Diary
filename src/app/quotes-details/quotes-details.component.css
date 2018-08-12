@@ -1,3 +1,16 @@
+<<<<<<< HEAD
 /* li {
   list-style: none;
 } */
+=======
+.quoteAuthor {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+  color: rgb(255, 204, 0);
+}
+
+.extraDetails {
+  font: 15px bolder;
+}
+>>>>>>> c0b9b66
