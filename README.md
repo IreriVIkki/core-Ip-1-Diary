@@ -1,27 +1,45 @@
-# Quotes
+# **BestLifeQuotes.com**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
+This project has been developed by:
 
-## Development server
+**Victor Ireri**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Languages And Framework Used
 
-## Code scaffolding
+Angular framework has been used in the development of this project and the languages used include
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- TypeScript - used for adding functionality to the app
 
-## Build
+- Html Markup and has been used to write the markup
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- CSS is used for styling the app
 
-## Running unit tests
+- bootstrap css framework has been used for the styling as well
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Project Description
 
-## Running end-to-end tests
+This is a web-app built for providing quotes to the user.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Users can also **add** and **delete** quotes - this feature will much effective once a login system has been established but for now it just shows a basic exaple of how the project works.
 
-## Further help
+- Users also get to see how long ago a quote was posted
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- users can also **upvote** and **downvote** quotes that they like or don't like.
+
+- A quote of the day is showed up top. The quote that makes it to the quote of the day is that which has the most upvotes
+
+- On the left side is a column of quotes on pictures. \*\*Future plans include making the images auto scroll upwards
+
+- Users should click on the **add new** quote to get rid of any input before adding a new quote.
+
+- The **refresh** button updates all the quotes after user adds a new one and also updates quote of the day to the current one.
+
+  ## Set up instructions
+
+## Set up instructions
+
+to start reading adding and deleting quotes, simply click on this [link](https://irerivikki.github.io/core-ip-1-diary/ "BestLifeQuotes.com") to visit the website.
+
+## copyright and license
+
+[Copyright@MoringaSchool]() 2018
