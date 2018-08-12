@@ -12,6 +12,7 @@ export class QuotesComponent implements OnInit {
   quotes: Array<Quotes>;
 
   getNewQuote(x: Array<Quotes>): void {
+    console.log(x);
     this.quotes = x;
   }
 
