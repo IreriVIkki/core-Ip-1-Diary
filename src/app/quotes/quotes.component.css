@@ -4,12 +4,12 @@
 
 .jumbotron {
   height: auto;
-  background-color: rgba(45, 45, 45, 0.647);
+  background-color: rgba(45, 45, 45, 0.777);
 }
 
 .main {
   background-image: url('../../assets/mainbg.jpg');
-  background-size: 100% auto;
+  background-size: 100% 100vh;
   background-attachment: fixed;
   background-position: center;
 }
@@ -31,7 +31,7 @@
 }
 
 .sidebar {
-  height: 100vh;
+  height: auto;
   background-color: rgba(33, 33, 33, 0.304);
   overflow: hidden;
 }
