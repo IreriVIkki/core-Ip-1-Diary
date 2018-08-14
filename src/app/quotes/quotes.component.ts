@@ -33,8 +33,29 @@ export class QuotesComponent implements OnInit {
       }
     }
 
-    // updateQuotes() {
-    //   }
+    this.quoteOfDay = this.quotesArray[likes].quote;
+    this.quoteAuthor = this.quotesArray[likes].author;
+    console.log(this.quoteAuthor);
+    this.quotes = this.quotesArray;
+  }
+
+  updateQuotes() {
+    var likes = 0;
+    for (let i = 0; i < this.quotesArray.length; i++) {
+      console.log(new Date());
+      this.quotesArray[i].timepassed = [
+        new Date(),
+        this.quotesArray[i].creationTime
+      ];
+      console.log(new Date());
+      if (this.quotesArray[i].upvotes > likes) {
+        likes = i;
+        if (likes == 0) {
+          likes = this.quotesArray.length;
+        }
+      }
+    }
+
     this.quoteOfDay = this.quotesArray[likes].quote;
     this.quoteAuthor = this.quotesArray[likes].author;
     console.log(this.quoteAuthor);
