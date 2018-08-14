@@ -6,6 +6,7 @@ export class Quotes {
     public downvotes: number,
     public author: string,
     public user: string,
-    public timepassed: Date
+    public creationTime: Date,
+    public timepassed: Date[]
   ) {}
 }

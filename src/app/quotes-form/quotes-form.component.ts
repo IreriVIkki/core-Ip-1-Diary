@@ -24,7 +24,8 @@ export class QuotesFormComponent implements OnInit {
         0,
         "Gary Vaynerchuk",
         "Victor Ireri",
-        new Date()
+        new Date(),
+        []
       ),
       new Quotes(
         2,
@@ -33,9 +34,11 @@ export class QuotesFormComponent implements OnInit {
         0,
         "Gary Vaynerchuk",
         "Victor Ireri",
-        new Date()
+        new Date(),
+        []
       )
     ];
+    this.quotesArray.emit(this.quotes);
   }
 
   @Output()
@@ -49,7 +52,8 @@ export class QuotesFormComponent implements OnInit {
       0,
       this.author,
       this.user,
-      new Date()
+      new Date(),
+      []
     );
     this.quotes.push(Quote);
     this.quotesArray.emit(this.quotes);
